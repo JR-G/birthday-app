@@ -1,16 +1,18 @@
+require 'date'
 class Countdown
-  def initialize(day, month, year='2020')
-    @day = day
-    @month = month
-    @year = year
+  def initialize(day, month, year=2020)
+    @time = Date.today  
+    @birthday = Date.new(year,month,day)
+   end
 
-    time = Time.new
-    @current_day = time.day
-    @current_month = time.month
-    @current_year = time.year
-
-    p time.strftime("%d/%m/%Y")
-
-
+  def days_between
+    if @time == @birthday
+      return 0
+    elsif @birthday < @time
+      ((@birthday += 365) - @time).to_i
+    else
+      (@birthday - @time).to_i 
+    end 
   end
+
 end
