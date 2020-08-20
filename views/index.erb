@@ -1,30 +1,36 @@
-<h1>Hello there!</h1>
-<form action='/countdown' method='post'>
-  <label for='name'>
-    What is your name?
-    <input type='text' name='name'>
-  </label>
-  <label for='go'>
-   When is your birthday?
-    <label for='day'>
-     day:
-      <input type='text' name='day'>
+<body style="background-color:Tomato;text-align: center;">
+  <h1>Hello there!</h1>
+  <br></br>
+  <form action='/countdown' method='post'>
+  
+    <label for='name'>
+     <h3>What is your name?</h3>
+      <input type='text' name='name'>
     </label>
-    <label for='month'>
-     month:
-     <select id='month' name='month'>
-     <option value="january">January</option>
-     <option value="february">February</option>
-     <option value="march">March</option>
-     <option value="april">April</option>
-     <option value="may">May</option>
-     <option value="june">June</option>
-     <option value="july">July</option>
-     <option value="august">August</option>
-     <option value="september">September</option>
-     <option value="october">October</option>
-     <option value="november">November</option>
-     <option value="december">December</option>
-     </select>
-     </label>
-    </form>
+    <label for='go'>
+    <h3>When is your birthday?</h3>
+      <label for='day'>
+      day:
+        <input type='text' name='day'>
+      </label>
+      <label for='month'>
+      month:
+      <select id='month' name='month'>
+        <option value="january">January</option>
+        <option value="february">February</option>
+        <option value="march">March</option>
+        <option value="april">April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="august">August</option>
+        <option value="september">September</option>
+        <option value="october">October</option>
+        <option value="november">November</option>
+        <option value="december">December</option>
+      </select>
+    </label>
+    <br></br>
+    <input type='submit' value="Go">
+  </form>
+</body>    
